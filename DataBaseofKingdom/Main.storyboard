@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SW0-VO-r8E">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-21" y="356"/>
         </scene>
-        <!--Item-->
+        <!--ダンジョン-->
         <scene sceneID="tsN-VX-mfm">
             <objects>
                 <viewController id="la7-ky-rdA" sceneMemberID="viewController">
@@ -37,14 +37,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ubn-aW-GsE"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="ダンジョン" image="ic_games.png" id="ubn-aW-GsE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSc-zb-PH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1667" y="356"/>
         </scene>
-        <!--Item 2-->
+        <!--データ-->
         <scene sceneID="tEQ-7f-li2">
             <objects>
                 <viewController id="2RT-A2-aJm" sceneMemberID="viewController">
@@ -57,14 +57,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xXf-6e-sDv"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="データ" image="ic_format_list_bulleted.png" id="xXf-6e-sDv"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ng-vb-ucA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1302" y="356"/>
         </scene>
-        <!--Item 1-->
+        <!--ホーム-->
         <scene sceneID="ulg-yr-FFi">
             <objects>
                 <viewController id="gVk-Ca-wO7" sceneMemberID="viewController">
@@ -77,14 +77,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="xf1-cL-2wg"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="ic_home.png" id="xf1-cL-2wg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDR-dt-CmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="926" y="356"/>
         </scene>
-        <!--Item-->
+        <!--その他-->
         <scene sceneID="gUJ-tG-fhT">
             <objects>
                 <viewController id="RxO-vx-lmZ" sceneMemberID="viewController">
@@ -97,17 +97,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xwZ-85-if6"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="その他" image="ic_more_horiz.png" id="xwZ-85-if6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sz-2q-1mC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2061" y="356"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Original Tab Bar Controller-->
         <scene sceneID="JCq-Se-AI1">
             <objects>
-                <tabBarController id="SW0-VO-r8E" sceneMemberID="viewController">
+                <tabBarController id="SW0-VO-r8E" customClass="OriginalTabBarController" customModule="DataBaseofKingdom" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6sP-7O-XEK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -126,4 +126,10 @@
             <point key="canvasLocation" x="484" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_format_list_bulleted.png" width="24" height="24"/>
+        <image name="ic_games.png" width="24" height="24"/>
+        <image name="ic_home.png" width="24" height="24"/>
+        <image name="ic_more_horiz.png" width="24" height="24"/>
+    </resources>
 </document>
