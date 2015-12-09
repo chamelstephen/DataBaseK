@@ -11,15 +11,19 @@ import UIKit
 
 class OriginalTabBarController: UITabBarController {
     
+    /*
+    
     var HomeView: UITabBarController!
     var DataView: UITabBarController!
     var DungonView: UITabBarController!
     var OtherView: UITabBarController!
     
-
+*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
         
         HomeView = UITabBarController()
         DataView = UITabBarController()
@@ -39,7 +43,7 @@ class OriginalTabBarController: UITabBarController {
         self.setViewControllers([HomeViewNavigationController, DataViewNavigationController, DungonViewNavigationController, OtherViewNavigationController], animated: false)
         
         //ソース：http://www.tejitak.com/blog/?p=1027を参照
-        
+        */
         
         
 

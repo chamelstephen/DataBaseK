@@ -28,6 +28,10 @@
 		D75475851C18689D00E9C8C3 /* ic_more_horiz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D75475821C18689D00E9C8C3 /* ic_more_horiz@2x.png */; };
 		D75475861C18689D00E9C8C3 /* ic_more_horiz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D75475831C18689D00E9C8C3 /* ic_more_horiz@3x.png */; };
 		D75475871C18689D00E9C8C3 /* ic_more_horiz.png in Resources */ = {isa = PBXBuildFile; fileRef = D75475841C18689D00E9C8C3 /* ic_more_horiz.png */; };
+		D75475891C186BF200E9C8C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75475881C186BF200E9C8C3 /* HomeViewController.swift */; };
+		D754758B1C186C0200E9C8C3 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754758A1C186C0200E9C8C3 /* DataViewController.swift */; };
+		D754758D1C186CC300E9C8C3 /* DungonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754758C1C186CC300E9C8C3 /* DungonViewController.swift */; };
+		D754758F1C186CD100E9C8C3 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754758E1C186CD100E9C8C3 /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		D75475821C18689D00E9C8C3 /* ic_more_horiz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_more_horiz@2x.png"; sourceTree = "<group>"; };
 		D75475831C18689D00E9C8C3 /* ic_more_horiz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_more_horiz@3x.png"; sourceTree = "<group>"; };
 		D75475841C18689D00E9C8C3 /* ic_more_horiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_more_horiz.png; sourceTree = "<group>"; };
+		D75475881C186BF200E9C8C3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D754758A1C186C0200E9C8C3 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		D754758C1C186CC300E9C8C3 /* DungonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DungonViewController.swift; sourceTree = "<group>"; };
+		D754758E1C186CD100E9C8C3 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,12 +147,16 @@
 			children = (
 				D754751E1C18319D00E9C8C3 /* AppDelegate.swift */,
 				D754755E1C18375300E9C8C3 /* ViewController.swift */,
+				D75475641C1842C100E9C8C3 /* OriginalTabBarController.swift */,
 				D754756E1C185FEC00E9C8C3 /* Main.storyboard */,
 				D75475281C18319D00E9C8C3 /* Assets.xcassets */,
 				D754752A1C18319D00E9C8C3 /* LaunchScreen.storyboard */,
 				D754752D1C18319D00E9C8C3 /* Info.plist */,
 				D75475251C18319D00E9C8C3 /* DataBaseofKingdom.xcdatamodeld */,
-				D75475641C1842C100E9C8C3 /* OriginalTabBarController.swift */,
+				D75475881C186BF200E9C8C3 /* HomeViewController.swift */,
+				D754758A1C186C0200E9C8C3 /* DataViewController.swift */,
+				D754758C1C186CC300E9C8C3 /* DungonViewController.swift */,
+				D754758E1C186CD100E9C8C3 /* OtherViewController.swift */,
 			);
 			path = DataBaseofKingdom;
 			sourceTree = "<group>";
@@ -313,9 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75475891C186BF200E9C8C3 /* HomeViewController.swift in Sources */,
 				D754755F1C18375300E9C8C3 /* ViewController.swift in Sources */,
 				D754751F1C18319D00E9C8C3 /* AppDelegate.swift in Sources */,
+				D754758D1C186CC300E9C8C3 /* DungonViewController.swift in Sources */,
 				D75475651C1842C100E9C8C3 /* OriginalTabBarController.swift in Sources */,
+				D754758F1C186CD100E9C8C3 /* OtherViewController.swift in Sources */,
+				D754758B1C186C0200E9C8C3 /* DataViewController.swift in Sources */,
 				D75475271C18319D00E9C8C3 /* DataBaseofKingdom.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

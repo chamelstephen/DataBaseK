@@ -11,12 +11,45 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
+    
+    //private var window: UIWindow?
+    private var myTabBarController: UITabBarController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let HomeView: UIViewController = HomeViewController()
+        let DataView: UIViewController = DataViewController()
+        let DungonView: UIViewController = DungonViewController()
+        let OtherView: UIViewController = OtherViewController()
+        
+        //アイコンの設定
+        HomeView.tabBarItem = UITabBarItem(title: "ホーム", image: UIImage(named: "ic_home.png"), tag: 0)//アイコン
+        DataView.tabBarItem = UITabBarItem(title: "データ", image: UIImage(named: "ic_format_list_bulleted.png"), tag: 1)
+        DungonView.tabBarItem = UITabBarItem(title: "ダンジョン", image: UIImage(named: "ic_games.png"), tag: 2)
+        OtherView.tabBarItem = UITabBarItem(title: "その他", image: UIImage(named: "ic_more_horiz.png"), tag: 3)
+        
+        
+        let HomeViewNavigationController = UINavigationController(rootViewController: HomeView)
+        let DataViewNavigationController = UINavigationController(rootViewController: DataView)
+        let DungonViewNavigationController = UINavigationController(rootViewController: DungonView)
+        let OtherViewNavigationController = UINavigationController(rootViewController: OtherView)
+        
+        myTabBarController = UITabBarController()
+        
+        myTabBarController?.setViewControllers([HomeViewNavigationController, DataViewNavigationController, DungonViewNavigationController, OtherViewNavigationController], animated: false)
+        
+        self.window?.rootViewController = myTabBarController
+        
+        //self.window!.rootViewController = myTabBarController →エラー
+        
+        self.window!.makeKeyAndVisible()
+        
+        //ソース：http://swift-salaryman.com/uitabbarcontroller.php , https://teratail.com/questions/12942
+        
         return true
     }
 
