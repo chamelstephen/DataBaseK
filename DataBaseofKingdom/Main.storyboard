@@ -53,15 +53,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DataCell" rowHeight="55" id="Amc-VC-yPO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="DataCell" rowHeight="55" id="Amc-VC-yPO">
                                 <rect key="frame" x="0.0" y="92" width="320" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Amc-VC-yPO" id="dfJ-PA-sVv">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Hgu-gm-uF9" kind="push" id="D1K-zu-gbl"/>
+                                    <segue destination="Hgu-gm-uF9" kind="show" identifier="ToMonsterData" id="N6e-sB-zYE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2K-SW-rQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518" y="-254"/>
+            <point key="canvasLocation" x="1679" y="-254"/>
         </scene>
         <!--データ-->
         <scene sceneID="YzM-iD-deb">

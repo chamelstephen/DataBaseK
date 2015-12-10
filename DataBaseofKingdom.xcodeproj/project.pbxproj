@@ -167,8 +167,8 @@
 				D754758E1C186CD100E9C8C3 /* OtherViewController.swift */,
 				D75475961C19079C00E9C8C3 /* DataItemsTableViewCell.swift */,
 				D75475971C19079C00E9C8C3 /* DataItemsTableViewCell.xib */,
-				D754759A1C19135800E9C8C3 /* MonsterDataViewController.swift */,
 				D754759C1C19197500E9C8C3 /* DataTableViewController.swift */,
+				D754759A1C19135800E9C8C3 /* MonsterDataViewController.swift */,
 			);
 			path = DataBaseofKingdom;
 			sourceTree = "<group>";

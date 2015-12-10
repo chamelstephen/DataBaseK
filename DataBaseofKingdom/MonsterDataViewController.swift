@@ -16,11 +16,19 @@ class MonsterDataViewController: UIViewController {
     @IBOutlet var dataText: UITextView!
     @IBOutlet var skillBut: UIButton!
     @IBOutlet var leaderskillBut: UIButton!
+    
+    var MonData: NSArray = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        MonData = appDelegate.DataItemsArray //appDelegateの配列から配列を受け取る
+        
+        nameLab.text = "\(MonData[0])"
     }
 
     override func didReceiveMemoryWarning() {

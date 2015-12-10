@@ -14,9 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    //private var window: UIWindow?
-    private var myTabBarController: UITabBarController!
-
+    private var myTabBarController: UITabBarController!//myTabBarControllerをコメントアウトしたが必要
+    
+    var DataItemsArray: NSArray = [] //DataTablViewControllerからMonsterDataViewControllerへの受け渡しに利用する
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

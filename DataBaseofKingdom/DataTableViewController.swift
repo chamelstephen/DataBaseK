@@ -16,6 +16,8 @@ class DataTableViewController: UITableViewController/*, UITableViewDelegate, UIT
     @IBOutlet var favoriteBut: UIButton!
     
     var dataItems: [String] = ["楊端和", "白起"]
+    
+    var selectedCell: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,18 +83,55 @@ class DataTableViewController: UITableViewController/*, UITableViewDelegate, UIT
         cell.defenceLab?.layer.masksToBounds = true
         cell.defenceLab?.layer.cornerRadius = 3
 
+        cell.tag = indexPath.row
+        
         return cell
         
     }
+    
+    //cellが選択された際に呼び出される
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        print("選択された武将名は→\(dataItems[indexPath.row])")
+        
+        selectedCell += ["\(dataItems[indexPath.row])"]
+        //選択されたセルの武将のデータを配列から取り出して新しい配列に入れる
+        
+        print("配列に入れられた武将名は→\(selectedCell[0])")
+        
+        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appDelegate.DataItemsArray = selectedCell
+        //武将のデータの入った配列をappDelegateのDataItemsArrayに渡す
+        
+        performSegueWithIdentifier("ToMonsterData", sender: nil)
+        
+    }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "ToMosterData"){
+            
+            let MonsterDataView : MonsterDataViewController = segue.destinationViewController as! MonsterDataViewController
+            //storyboardでshowを選択
+            
+            //次のクラスに値を直接受け渡したいときはここに書く
+        }
+        
     }
-    */
 
 }
+
+
+
+
+
+
+
+
+
+
