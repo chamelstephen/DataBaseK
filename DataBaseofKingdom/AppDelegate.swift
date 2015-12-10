@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DungonView.tabBarItem = UITabBarItem(title: "ダンジョン", image: UIImage(named: "ic_games.png"), tag: 2)
         OtherView.tabBarItem = UITabBarItem(title: "その他", image: UIImage(named: "ic_more_horiz.png"), tag: 3)
         
+        /*
         
         let HomeViewNavigationController = UINavigationController(rootViewController: HomeView)
         let DataViewNavigationController = UINavigationController(rootViewController: DataView)
@@ -43,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         myTabBarController?.setViewControllers([HomeViewNavigationController, DataViewNavigationController, DungonViewNavigationController, OtherViewNavigationController], animated: false)
         
         self.window?.rootViewController = myTabBarController
+*/
         
         //self.window!.rootViewController = myTabBarController →エラー
         

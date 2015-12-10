@@ -2,24 +2,33 @@
 //  DataViewController.swift
 //  DataBaseofKingdom
 //
-//  Created by kento on 2015/12/09.
+//  Created by kento on 2015/12/10.
 //  Copyright © 2015年 Kento Ohara. All rights reserved.
 //
 
 import UIKit
 
-class DataViewController: UIViewController {
+class DataViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var mysegmentedcontroll: UISegmentedControl = UISegmentedControl(items: ["武将","装備品"])
-  
+    @IBOutlet var dataTableView: UITableView!
+    @IBOutlet var dataSegCon: UISegmentedControl!
+    @IBOutlet var searchBut: UIButton!
+    @IBOutlet var favoriteBut: UIButton!
+    
+    var dataItems: [String] = ["楊端和", "白起"]
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mysegmentedcontroll.center = CGPoint(x: self.view.frame.width/2, y: 0)
+        dataTableView.delegate = self
+        dataTableView.dataSource = self
+        dataTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "DataCell")
         
-        mysegmentedcontroll.selectedSegmentIndex = 1
-        mysegmentedcontroll.frame = CGRect(x: 0, y: 50, width: self.view.bounds.width/2, height: 30)
+        let dataxib = UINib(nibName: "DataItemsTableViewCell", bundle: nil)
+        dataTableView.registerNib(dataxib, forCellReuseIdentifier: "DataCell")
         
+
         // Do any additional setup after loading the view.
     }
 
@@ -38,5 +47,23 @@ class DataViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    /*
+    Cellが選択された際に呼び出される.
+    */
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+    //
+        
+    }
+    
+    /*
+    テーブルに表示する配列の総数を返す.
+    */
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataItems.count
+        
+    }
+    
 
 }
