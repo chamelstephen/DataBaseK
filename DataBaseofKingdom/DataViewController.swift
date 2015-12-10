@@ -61,9 +61,49 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     テーブルに表示する配列の総数を返す.
     */
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return dataItems.count
         
     }
+    
+    /*
+    Cellに値を設定する.
+    */
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("DataCell", forIndexPath: indexPath) as! DataItemsTableViewCell
+        
+        //icView
+        
+        
+        //nameLab
+        cell.nameLab?.text = "\(dataItems[indexPath.row])"//nameLabに名前を挿入
+        
+        //levelLab
+        cell.levelLab?.layer.masksToBounds = true
+        cell.levelLab?.layer.cornerRadius = 3
+        
+        //hpLab
+        cell.hpLab?.layer.masksToBounds = true
+        cell.hpLab?.layer.cornerRadius = 3
+        
+        //fireLab
+        cell.fireLab?.layer.masksToBounds = true
+        cell.fireLab?.layer.cornerRadius = 3
+        
+        //intelLab
+        cell.intelLab?.layer.masksToBounds = true
+        cell.intelLab?.layer.cornerRadius = 3
+        
+        //defenceLab
+        cell.defenceLab?.layer.masksToBounds = true
+        cell.defenceLab?.layer.cornerRadius = 3
+        
+        
+        return cell
+        
+    }
+    
     
 
 }

@@ -34,6 +34,7 @@
 		D75475941C18FC9C00E9C8C3 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75475921C18FC9C00E9C8C3 /* DataViewController.swift */; };
 		D75475981C19079C00E9C8C3 /* DataItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75475961C19079C00E9C8C3 /* DataItemsTableViewCell.swift */; };
 		D75475991C19079C00E9C8C3 /* DataItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75475971C19079C00E9C8C3 /* DataItemsTableViewCell.xib */; };
+		D754759B1C19135800E9C8C3 /* MonsterDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D754759A1C19135800E9C8C3 /* MonsterDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		D75475921C18FC9C00E9C8C3 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		D75475961C19079C00E9C8C3 /* DataItemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataItemsTableViewCell.swift; sourceTree = "<group>"; };
 		D75475971C19079C00E9C8C3 /* DataItemsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataItemsTableViewCell.xib; sourceTree = "<group>"; };
+		D754759A1C19135800E9C8C3 /* MonsterDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				D754758E1C186CD100E9C8C3 /* OtherViewController.swift */,
 				D75475961C19079C00E9C8C3 /* DataItemsTableViewCell.swift */,
 				D75475971C19079C00E9C8C3 /* DataItemsTableViewCell.xib */,
+				D754759A1C19135800E9C8C3 /* MonsterDataViewController.swift */,
 			);
 			path = DataBaseofKingdom;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				D75475651C1842C100E9C8C3 /* OriginalTabBarController.swift in Sources */,
 				D754758F1C186CD100E9C8C3 /* OtherViewController.swift in Sources */,
 				D75475271C18319D00E9C8C3 /* DataBaseofKingdom.xcdatamodeld in Sources */,
+				D754759B1C19135800E9C8C3 /* MonsterDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
